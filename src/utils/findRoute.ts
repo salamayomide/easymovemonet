@@ -41,10 +41,9 @@ function estimateRouteTime(route: Route, fromId: string, toId: string) {
   const toIndex = route.stops.findIndex((s) => s.id === toId);
   if (fromIndex === -1 || toIndex === -1 || fromIndex > toIndex) return 0;
   const stopsCount = toIndex - fromIndex;
-  if (route.travelTime && route.stops.length > 1) {
-    // scale travelTime proportional to segment length
-    const perSegment = route.travelTime / (route.stops.length - 1);
-    return Math.round(perSegment * stopsCount);
+  if (typeof route.travelTime === "number" && route.stops.length > 1) {
+  const perSegment = route.travelTime / (route.stops.length - 1);
+  return Math.round(perSegment * stopsCount);
   }
   // fallback estimate: 3.5 minutes per hop
   return Math.round(stopsCount * 3.5);

@@ -5,7 +5,7 @@ import type { PlanResult } from "../utils/findRoute";
 import "leaflet/dist/leaflet.css";
 
 // fix icons for many bundlers
-delete (L.Icon.Default.prototype as any)._getIconUrl;
+delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: () => string })._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: import("leaflet/dist/images/marker-icon-2x.png"),
   iconUrl: import("leaflet/dist/images/marker-icon.png"),
