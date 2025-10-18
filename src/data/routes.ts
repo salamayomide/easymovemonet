@@ -13,8 +13,8 @@ export const routes: Route[] = [
   {
     id: "r-001",
     name: "Ikorodu → Mile 12 → Ojota → CMS",
-    transportType: "Danfo",
-    fare: 600,
+    transportType: "BRt",
+    fare: 900,
     stops: [
       { id: "ikorodu", name: "Ikorodu", latitude: 6.619, longitude: 3.508, type: "Danfo" },
       { id: "mile12", name: "Mile 12", latitude: 6.60797, longitude: 3.3968, type: "Danfo" },
@@ -30,8 +30,8 @@ export const routes: Route[] = [
   {
     id: "r-002",
     name: "CMS → Ojota → Mile 12 → Ikorodu",
-    transportType: "Danfo",
-    fare: 600,
+    transportType: "BRT",
+    fare: 900,
     stops: [
       { id: "cms", name: "CMS", latitude: 6.447, longitude: 3.395, type: "Danfo" },
       { id: "obalende", name: "Obalende", latitude: 6.447, longitude: 3.406, type: "Danfo" },
@@ -49,7 +49,7 @@ export const routes: Route[] = [
     id: "r-003",
     name: "Ikorodu BRT → Ojota → Lekki → Ajah",
     transportType: "BRT",
-    fare: 900,
+    fare: 1500,
     stops: [
       { id: "ikorodu_brt", name: "Ikorodu (BRT)", latitude: 6.619, longitude: 3.508, type: "BRT" },
       { id: "ojota_brt", name: "Ojota (BRT)", latitude: 6.580, longitude: 3.350, type: "BRT" },
@@ -63,7 +63,7 @@ export const routes: Route[] = [
     id: "r-004",
     name: "Ajah → Lekki → Ojota → Ikorodu (BRT)",
     transportType: "BRT",
-    fare: 900,
+    fare: 1500,
     stops: [
       { id: "ajah", name: "Ajah", latitude: 6.466, longitude: 3.603, type: "BRT" },
       { id: "lekki_phase1", name: "Lekki Phase I", latitude: 6.442, longitude: 3.474, type: "BRT" },
@@ -79,7 +79,7 @@ export const routes: Route[] = [
     id: "r-005",
     name: "Ikeja → Maryland → Obalende → CMS (BRT)",
     transportType: "BRT",
-    fare: 650,
+    fare: 700,
     stops: [
       { id: "ikeja", name: "Ikeja", latitude: 6.601, longitude: 3.351, type: "BRT" },
       { id: "adeen", name: "Adeniyi Jones/Ikeja", latitude: 6.600, longitude: 3.341, type: "BRT" },
@@ -93,7 +93,7 @@ export const routes: Route[] = [
     id: "r-006",
     name: "CMS → Obalende → Maryland → Ikeja (BRT)",
     transportType: "BRT",
-    fare: 650,
+    fare: 700,
     stops: [
       { id: "cms", name: "CMS", latitude: 6.447, longitude: 3.395, type: "BRT" },
       { id: "obalende", name: "Obalende", latitude: 6.447, longitude: 3.406, type: "BRT" },
@@ -108,7 +108,7 @@ export const routes: Route[] = [
     id: "r-007",
     name: "Oshodi → Mushin → Agege → Ikeja",
     transportType: "Danfo",
-    fare: 350,
+    fare: 500,
     stops: [
       { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" },
       { id: "mushin", name: "Mushin", latitude: 6.537, longitude: 3.329, type: "Danfo" },
@@ -121,7 +121,7 @@ export const routes: Route[] = [
     id: "r-008",
     name: "Ikeja → Agege → Mushin → Oshodi",
     transportType: "Danfo",
-    fare: 350,
+    fare: 600,
     stops: [
       { id: "ikeja", name: "Ikeja", latitude: 6.601, longitude: 3.351, type: "Danfo" },
       { id: "agege", name: "Agege", latitude: 6.620, longitude: 3.321, type: "Danfo" },
@@ -136,7 +136,7 @@ export const routes: Route[] = [
     id: "r-009",
     name: "Oshodi → Iyana-Ipaja → Abule-Egba (BRT)",
     transportType: "BRT",
-    fare: 400,
+    fare: 600,
     stops: [
       { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "BRT" },
       { id: "iyanipaja", name: "Iyana-Ipaja", latitude: 6.582, longitude: 3.265, type: "BRT" },
@@ -148,7 +148,7 @@ export const routes: Route[] = [
     id: "r-010",
     name: "Abule-Egba → Iyana-Ipaja → Oshodi (BRT)",
     transportType: "BRT",
-    fare: 400,
+    fare: 600,
     stops: [
       { id: "abuleegba", name: "Abule-Egba", latitude: 6.600, longitude: 3.333, type: "BRT" },
       { id: "iyanipaja", name: "Iyana-Ipaja", latitude: 6.582, longitude: 3.265, type: "BRT" },
@@ -162,7 +162,7 @@ export const routes: Route[] = [
     id: "r-011",
     name: "Mile 2 → Iganmu → Apapa → CMS",
     transportType: "Danfo",
-    fare: 450,
+    fare: 700,
     stops: [
       { id: "mile2", name: "Mile 2", latitude: 6.460, longitude: 3.287, type: "Danfo" },
       { id: "iganmu", name: "Iganmu", latitude: 6.472, longitude: 3.360, type: "Danfo" },
@@ -175,7 +175,7 @@ export const routes: Route[] = [
     id: "r-012",
     name: "CMS → Apapa → Iganmu → Mile 2",
     transportType: "Danfo",
-    fare: 450,
+    fare: 700,
     stops: [
       { id: "cms", name: "CMS", latitude: 6.447, longitude: 3.395, type: "Danfo" },
       { id: "apapa", name: "Apapa", latitude: 6.449, longitude: 3.355, type: "Danfo" },
@@ -190,7 +190,7 @@ export const routes: Route[] = [
     id: "r-013",
     name: "Yaba → Ojuelegba → Surulere",
     transportType: "Danfo",
-    fare: 250,
+    fare: 400,
     stops: [
       { id: "yaba", name: "Yaba", latitude: 6.509, longitude: 3.378, type: "Danfo" },
       { id: "ojuelegba", name: "Ojuelegba", latitude: 6.511604, longitude: 3.363265, type: "Danfo" },
@@ -202,7 +202,7 @@ export const routes: Route[] = [
     id: "r-014",
     name: "Surulere → Ojuelegba → Yaba",
     transportType: "Danfo",
-    fare: 250,
+    fare: 400,
     stops: [
       { id: "surulere", name: "Surulere", latitude: 6.496, longitude: 3.356, type: "Danfo" },
       { id: "ojuelegba", name: "Ojuelegba", latitude: 6.511604, longitude: 3.363265, type: "Danfo" },
@@ -216,7 +216,7 @@ export const routes: Route[] = [
     id: "r-015",
     name: "Berger → Ojota → Yaba → TBS (BRT)",
     transportType: "BRT",
-    fare: 750,
+    fare: 1000,
     stops: [
       { id: "berger", name: "Berger", latitude: 6.561, longitude: 3.350, type: "BRT" },
       { id: "ojota_brt", name: "Ojota (BRT)", latitude: 6.580, longitude: 3.350, type: "BRT" },
@@ -229,7 +229,7 @@ export const routes: Route[] = [
     id: "r-016",
     name: "TBS → Yaba → Ojota → Berger (BRT)",
     transportType: "BRT",
-    fare: 750,
+    fare: 1000,
     stops: [
       { id: "tbs", name: "TBS", latitude: 6.451, longitude: 3.392, type: "BRT" },
       { id: "yaba_brt", name: "Yaba (BRT)", latitude: 6.509, longitude: 3.378, type: "BRT" },
@@ -272,7 +272,7 @@ export const routes: Route[] = [
     id: "r-019",
     name: "Lekki Phase I → Jakande → VGC → Ajah",
     transportType: "Danfo",
-    fare: 350,
+    fare: 1000,
     stops: [
       { id: "lekki_phase1", name: "Lekki Phase I", latitude: 6.442, longitude: 3.474, type: "Danfo" },
       { id: "jakande", name: "Jakande Estate", latitude: 6.440, longitude: 3.511, type: "Danfo" },
@@ -285,7 +285,7 @@ export const routes: Route[] = [
     id: "r-020",
     name: "Ajah → VGC → Jakande → Lekki Phase I",
     transportType: "Danfo",
-    fare: 350,
+    fare: 1000,
     stops: [
       { id: "ajah", name: "Ajah", latitude: 6.466, longitude: 3.603, type: "Danfo" },
       { id: "vgc", name: "VGC", latitude: 6.451, longitude: 3.553, type: "Danfo" },
@@ -300,7 +300,7 @@ export const routes: Route[] = [
     id: "r-021",
     name: "Ojota → Ilupeju → Palmgrove → Oshodi",
     transportType: "Danfo",
-    fare: 300,
+    fare: 500,
     stops: [
       { id: "ojota", name: "Ojota", latitude: 6.580, longitude: 3.350, type: "Danfo" },
       { id: "ilupeju", name: "Ilupeju", latitude: 6.587, longitude: 3.319, type: "Danfo" },
@@ -313,7 +313,7 @@ export const routes: Route[] = [
     id: "r-022",
     name: "Oshodi → Palmgrove → Ilupeju → Ojota",
     transportType: "Danfo",
-    fare: 300,
+    fare: 500,
     stops: [
       { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" },
       { id: "palmgrove", name: "Palmgrove", latitude: 6.561, longitude: 3.358, type: "Danfo" },
@@ -384,7 +384,7 @@ export const routes: Route[] = [
     id: "r-027",
     name: "Surulere → Ojuelegba → Apapa → TBS",
     transportType: "Danfo",
-    fare: 400,
+    fare: 500,
     stops: [
       { id: "surulere", name: "Surulere", latitude: 6.496, longitude: 3.356, type: "Danfo" },
       { id: "ojuelegba", name: "Ojuelegba", latitude: 6.511604, longitude: 3.363265, type: "Danfo" },
@@ -397,7 +397,7 @@ export const routes: Route[] = [
     id: "r-028",
     name: "TBS → Apapa → Ojuelegba → Surulere",
     transportType: "Danfo",
-    fare: 400,
+    fare: 500,
     stops: [
       { id: "tbs", name: "TBS", latitude: 6.451, longitude: 3.392, type: "Danfo" },
       { id: "apapa", name: "Apapa", latitude: 6.449, longitude: 3.355, type: "Danfo" },
@@ -412,7 +412,7 @@ export const routes: Route[] = [
     id: "r-029",
     name: "Ikoyi → Falomo → Oniru → VI",
     transportType: "Danfo",
-    fare: 250,
+    fare: 400,
     stops: [
       { id: "ikoyi", name: "Ikoyi", latitude: 6.450, longitude: 3.433, type: "Danfo" },
       { id: "falomo", name: "Falomo", latitude: 6.441, longitude: 3.412, type: "Danfo" },
@@ -425,7 +425,7 @@ export const routes: Route[] = [
     id: "r-030",
     name: "VI → Oniru → Falomo → Ikoyi",
     transportType: "Danfo",
-    fare: 250,
+    fare: 400,
     stops: [
       { id: "victoria_island", name: "Victoria Island", latitude: 6.428, longitude: 3.421, type: "Danfo" },
       { id: "oniru", name: "Oniru", latitude: 6.427, longitude: 3.427, type: "Danfo" },
@@ -440,7 +440,7 @@ export const routes: Route[] = [
     id: "r-031",
     name: "Agege → Mushin → Ojota → Yaba",
     transportType: "Danfo",
-    fare: 300,
+    fare: 500,
     stops: [
       { id: "agege", name: "Agege", latitude: 6.620, longitude: 3.321, type: "Danfo" },
       { id: "mushin", name: "Mushin", latitude: 6.537, longitude: 3.329, type: "Danfo" },
@@ -455,7 +455,7 @@ export const routes: Route[] = [
     id: "r-032",
     name: "Maryland → Ojuelegba → Yaba",
     transportType: "Danfo",
-    fare: 150,
+    fare: 500,
     stops: [
       { id: "maryland", name: "Maryland", latitude: 6.560, longitude: 3.363, type: "Danfo" },
       { id: "ojuelegba", name: "Ojuelegba", latitude: 6.511604, longitude: 3.363265, type: "Danfo" },
@@ -467,7 +467,7 @@ export const routes: Route[] = [
     id: "r-033",
     name: "Ojuelegba → Maryland → Ikeja",
     transportType: "Danfo",
-    fare: 200,
+    fare: 500,
     stops: [
       { id: "ojuelegba", name: "Ojuelegba", latitude: 6.511604, longitude: 3.363265, type: "Danfo" },
       { id: "maryland", name: "Maryland", latitude: 6.560, longitude: 3.363, type: "Danfo" },
@@ -481,7 +481,7 @@ export const routes: Route[] = [
     id: "r-034",
     name: "Apongbon → Broad Street → CMS",
     transportType: "Danfo",
-    fare: 120,
+    fare: 300,
     stops: [
       { id: "apongbon", name: "Apongbon", latitude: 6.441, longitude: 3.369, type: "Danfo" },
       { id: "broad_st", name: "Broad Street", latitude: 6.447, longitude: 3.394, type: "Danfo" },
@@ -495,7 +495,7 @@ export const routes: Route[] = [
     id: "r-035",
     name: "TBS → Apapa Ferry Terminal → Apongbon",
     transportType: "Danfo",
-    fare: 200,
+    fare: 500,
     stops: [
       { id: "tbs", name: "TBS", latitude: 6.451, longitude: 3.392, type: "Danfo" },
       { id: "apapa_ferry", name: "Apapa Ferry Terminal", latitude: 6.446, longitude: 3.360, type: "Danfo" },
@@ -509,7 +509,7 @@ export const routes: Route[] = [
     id: "r-036",
     name: "Berger → Ojota → Maryland → Ikeja → Agege",
     transportType: "Danfo",
-    fare: 450,
+    fare: 800,
     stops: [
       { id: "berger", name: "Berger", latitude: 6.561, longitude: 3.350, type: "Danfo" },
       { id: "ojota", name: "Ojota", latitude: 6.580, longitude: 3.350, type: "Danfo" },
@@ -525,7 +525,7 @@ export const routes: Route[] = [
     id: "r-037",
     name: "Iyana-Ipaja → Ojota (feeder)",
     transportType: "Danfo",
-    fare: 180,
+    fare: 500,
     stops: [
       { id: "iyanipaja", name: "Iyana-Ipaja", latitude: 6.582, longitude: 3.265, type: "Danfo" },
       { id: "ojota", name: "Ojota", latitude: 6.580, longitude: 3.350, type: "Danfo" },
@@ -536,7 +536,7 @@ export const routes: Route[] = [
     id: "r-038",
     name: "Ikeja → Maryland (feeder)",
     transportType: "Danfo",
-    fare: 120,
+    fare: 300,
     stops: [
       { id: "ikeja", name: "Ikeja", latitude: 6.601, longitude: 3.351, type: "Danfo" },
       { id: "maryland", name: "Maryland", latitude: 6.560, longitude: 3.363, type: "Danfo" },
@@ -563,7 +563,7 @@ export const routes: Route[] = [
     id: "r-040",
     name: "TBS → CMS → Obalende → Ikoyi (BRT)",
     transportType: "BRT",
-    fare: 700,
+    fare: 900,
     stops: [
       { id: "tbs", name: "TBS", latitude: 6.451, longitude: 3.392, type: "BRT" },
       { id: "cms", name: "CMS", latitude: 6.447, longitude: 3.395, type: "BRT" },
@@ -578,7 +578,7 @@ export const routes: Route[] = [
     id: "r-041",
     name: "Maryland → Ojota (short)",
     transportType: "Danfo",
-    fare: 120,
+    fare: 300,
     stops: [
       { id: "maryland", name: "Maryland", latitude: 6.560, longitude: 3.363, type: "Danfo" },
       { id: "ojota", name: "Ojota", latitude: 6.580, longitude: 3.350, type: "Danfo" },
@@ -589,7 +589,7 @@ export const routes: Route[] = [
     id: "r-042",
     name: "Obalende → Broad Street → Apongbon",
     transportType: "Danfo",
-    fare: 150,
+    fare: 300,
     stops: [
       { id: "obalende", name: "Obalende", latitude: 6.447, longitude: 3.406, type: "Danfo" },
       { id: "broad_st", name: "Broad Street", latitude: 6.447, longitude: 3.394, type: "Danfo" },
@@ -603,7 +603,7 @@ export const routes: Route[] = [
     id: "r-043",
     name: "Berger → Ikeja → Ojota → Lekki → Ajah",
     transportType: "Danfo",
-    fare: 900,
+    fare: 1500,
     stops: [
       { id: "berger", name: "Berger", latitude: 6.561, longitude: 3.350, type: "Danfo" },
       { id: "ikeja", name: "Ikeja", latitude: 6.601, longitude: 3.351, type: "Danfo" },
@@ -883,7 +883,7 @@ export const routes: Route[] = [
   id: "r-057a",
   name: "Somolu → Palmgrove",
   transportType: "Danfo",
-  fare: 200,
+  fare: 400,
   stops: [
     { id: "somolu", name: "Somolu", latitude: 6.537, longitude: 3.380, type: "Danfo" },
     { id: "palmgrove", name: "Palmgrove", latitude: 6.545, longitude: 3.369, type: "Danfo" },
@@ -896,7 +896,7 @@ export const routes: Route[] = [
   id: "r-057b",
   name: "Palmgrove → Ikeja",
   transportType: "Danfo",
-  fare: 300,
+  fare: 500,
   stops: [
     { id: "palmgrove", name: "Palmgrove", latitude: 6.545, longitude: 3.369, type: "Danfo" },
     { id: "ikeja", name: "Ikeja", latitude: 6.601, longitude: 3.351, type: "Danfo" },
@@ -909,7 +909,7 @@ export const routes: Route[] = [
   id: "r-057c",
   name: "Ikeja → Ayobo",
   transportType: "Danfo",
-  fare: 300,
+  fare: 700,
   stops: [
     { id: "ikeja", name: "Ikeja", latitude: 6.601, longitude: 3.351, type: "Danfo" },
     { id: "ayobo", name: "Ayobo", latitude: 6.620, longitude: 3.235, type: "Danfo" },
