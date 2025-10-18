@@ -916,5 +916,44 @@ export const routes: Route[] = [
   ],
   travelTime: false,
 },
+// Route 4: Ayobo → Ikeja
+{
+  id: "r-057d",
+  name: "Ayobo → Ikeja",
+  transportType: "Danfo",
+  fare: 700,
+  stops: [
+    { id: "ayobo", name: "Ayobo", latitude: 6.620, longitude: 3.235, type: "Danfo" },
+    { id: "ikeja", name: "Ikeja", latitude: 6.601, longitude: 3.351, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+
+// Route 5: Ikeja → Palmgrove
+{
+  id: "r-057e",
+  name: "Ikeja → Palmgrove",
+  transportType: "Danfo",
+  fare: 500-700,
+  stops: [
+    { id: "ikeja", name: "Ikeja", latitude: 6.601, longitude: 3.351, type: "Danfo" },
+    { id: "palmgrove", name: "Palmgrove", latitude: 6.545, longitude: 3.369, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+
+// Route 6: Palmgrove → Somolu
+{
+  id: "r-051f",
+  name: "Palmgrove → Somolu",
+  transportType: "Danfo",
+  fare: 400,
+  stops: [
+    { id: "palmgrove", name: "Palmgrove", latitude: 6.545, longitude: 3.369, type: "Danfo" },
+    { id: "somolu", name: "Somolu", latitude: 6.537, longitude: 3.380, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+
 
 ];
