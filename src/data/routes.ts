@@ -934,7 +934,7 @@ export const routes: Route[] = [
   id: "r-057e",
   name: "Ikeja → Palmgrove",
   transportType: "Danfo",
-  fare: 500-700,
+  fare: 500,
   stops: [
     { id: "ikeja", name: "Ikeja", latitude: 6.601, longitude: 3.351, type: "Danfo" },
     { id: "palmgrove", name: "Palmgrove", latitude: 6.545, longitude: 3.369, type: "Danfo" },
@@ -944,7 +944,7 @@ export const routes: Route[] = [
 
 // Route 6: Palmgrove → Somolu
 {
-  id: "r-051f",
+  id: "r-057f",
   name: "Palmgrove → Somolu",
   transportType: "Danfo",
   fare: 400,
@@ -954,6 +954,106 @@ export const routes: Route[] = [
   ],
   travelTime: false,
 },
+
+// ===== Egbeda <-> Oshodi (feeder) =====
+{
+  id: "r-058",
+  name: "Egbeda → Oshodi",
+  transportType: "Danfo",
+  fare: 500,
+  stops: [
+    { id: "egbeda", name: "Egbeda", latitude: 6.6030, longitude: 3.2760, type: "Danfo" },
+    { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" }
+  ],
+  travelTime: false
+},
+{
+  id: "r-059",
+  name: "Oshodi → Egbeda",
+  transportType: "Danfo",
+  fare: 500,
+  stops: [
+    { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" },
+    { id: "egbeda", name: "Egbeda", latitude: 6.6030, longitude: 3.2760, type: "Danfo" }
+  ],
+  travelTime: false
+},
+
+// ===== Oshodi <-> Ajah (longer connector) =====
+{
+  id: "r-060",
+  name: "Oshodi → Ajah (via major corridor)",
+  transportType: "Danfo",
+  fare: 1200,
+  stops: [
+    { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" },
+    // You can insert intermediate stops if you want here (ikeja / ojota / lekki_phase1 etc.)
+    { id: "ajah", name: "Ajah", latitude: 6.4660, longitude: 3.6030, type: "Danfo" }
+  ],
+  travelTime: false
+},
+{
+  id: "r-061",
+  name: "Ajah → Oshodi",
+  transportType: "Danfo",
+  fare: 1200,
+  stops: [
+    { id: "ajah", name: "Ajah", latitude: 6.4660, longitude: 3.6030, type: "Danfo" },
+    { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" }
+  ],
+  travelTime: false
+},
+
+// ===== Egbeda ↔ Oshodi =====
+{
+  id: "r-062",
+  name: "Egbeda → Oshodi",
+  transportType: "Danfo",
+  fare: 500,
+  stops: [
+    { id: "egbeda", name: "Egbeda", latitude: 6.6030, longitude: 3.2760, type: "Danfo" },
+    { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+{
+  id: "r-062",
+  name: "Oshodi → Egbeda",
+  transportType: "Danfo",
+  fare: 500,
+  stops: [
+    { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" },
+    { id: "egbeda", name: "Egbeda", latitude: 6.6030, longitude: 3.2760, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+
+// ===== Oshodi ↔ Ikorodu =====
+{
+  id: "r-063",
+  name: "Oshodi → Ikorodu",
+  transportType: "Danfo",
+  fare: 700,
+  stops: [
+    { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" },
+    { id: "mile12", name: "Mile 12", latitude: 6.6005, longitude: 3.3931, type: "Danfo" },
+    { id: "ikorodu", name: "Ikorodu", latitude: 6.6194, longitude: 3.5105, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+{
+  id: "r-064",
+  name: "Ikorodu → Oshodi",
+  transportType: "Danfo",
+  fare: 700,
+  stops: [
+    { id: "ikorodu", name: "Ikorodu", latitude: 6.6194, longitude: 3.5105, type: "Danfo" },
+    { id: "mile12", name: "Mile 12", latitude: 6.6005, longitude: 3.3931, type: "Danfo" },
+    { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+
 
 
 ];
