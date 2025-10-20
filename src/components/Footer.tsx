@@ -21,7 +21,8 @@ export default function Footer() {
             <li><a href="/" className="hover:text-yellow-300 transition">Home</a></li>
             <li><a href="/routes" className="hover:text-yellow-300 transition">All Routes</a></li>
             <li><a href="/about" className="hover:text-yellow-300 transition">About</a></li>
-            <li><a href="/contact" className="hover:text-yellow-300 transition">Contact</a></li>
+            <li><a href="/contact" className="hover:text-yellow-300 transition">Contact:+2347083279077</a></li>
+            <li><a href="/contact" className="hover:text-yellow-300 transition">Email:Salamayomide63@gmail.com</a></li>
           </ul>
         </div>
 
@@ -32,7 +33,7 @@ export default function Footer() {
             <a href="#" className="hover:text-yellow-300 transition"><Facebook size={20} /></a>
             <a href="#" className="hover:text-yellow-300 transition"><Twitter size={20} /></a>
             <a href="#" className="hover:text-yellow-300 transition"><Instagram size={20} /></a>
-            <a href="mailto:oluwaseunoguneso211@gmail.com" className="hover:text-yellow-300 transition">
+            <a href="mailto:salamayomide63@gmail.com" className="hover:text-yellow-300 transition">
               <Mail size={20} />
             </a>
           </div>

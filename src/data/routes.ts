@@ -614,40 +614,10 @@ export const routes: Route[] = [
     travelTime: false
   },
 
-{
-  id: "r-063",
-  name: "Ajah → Oshodi → Ikotun",
-  transportType: "Danfo",
-  fare: 850,
-  stops: [
-    { id: "ajah", name: "Ajah", latitude: 6.466, longitude: 3.603, type: "Danfo" },
-    { id: "lekki_phase1", name: "Lekki Phase I", latitude: 6.442, longitude: 3.474, type: "Danfo" },
-    { id: "obanikoro", name: "Obanikoro", latitude: 6.544, longitude: 3.370, type: "Danfo" },
-    { id: "oshodi", name: "Oshodi", latitude: 6.556, longitude: 3.343, type: "Danfo" },
-    { id: "cele", name: "Cele", latitude: 6.505, longitude: 3.326, type: "Danfo" },
-    { id: "ikotun", name: "Ikotun", latitude: 6.544, longitude: 3.267, type: "Danfo" },
-  ],
-  travelTime: false,
-},
-{
-  id: "r-064",
-  name: "Ajah → Oshodi → Ijegun",
-  transportType: "Danfo",
-  fare: 900,
-  stops: [
-    { id: "ajah", name: "Ajah", latitude: 6.466, longitude: 3.603, type: "Danfo" },
-    { id: "lekki_phase1", name: "Lekki Phase I", latitude: 6.442, longitude: 3.474, type: "Danfo" },
-    { id: "obanikoro", name: "Obanikoro", latitude: 6.544, longitude: 3.370, type: "Danfo" },
-    { id: "oshodi", name: "Oshodi", latitude: 6.556, longitude: 3.343, type: "Danfo" },
-    { id: "cele", name: "Cele", latitude: 6.505, longitude: 3.326, type: "Danfo" },
-    { id: "ikotun", name: "Ikotun", latitude: 6.544, longitude: 3.267, type: "Danfo" },
-    { id: "ijegun", name: "Ijegun", latitude: 6.561, longitude: 3.258, type: "Danfo" },
-  ],
-  travelTime: false,
-},
+
 // 🚌 Ikotun → Oshodi
 {
-  id: "r-060",
+  id: "r-044",
   name: "Ikotun → Oshodi",
   transportType: "Danfo",
   fare: 400,
@@ -662,7 +632,7 @@ export const routes: Route[] = [
 
 // 🚌 Oshodi → Ajah
 {
-  id: "r-061",
+  id: "r-045",
   name: "Oshodi → Ajah",
   transportType: "Danfo",
   fare: 700,
@@ -676,7 +646,7 @@ export const routes: Route[] = [
   travelTime: false,
 },
 {
-  id: "r-062",
+  id: "r-046",
   name: "Ijegun → Oshodi",
   transportType: "Danfo",
   fare: 350,
@@ -690,7 +660,7 @@ export const routes: Route[] = [
 },
 // Ikotun → Oshodi → Ikorodu
 {
-  id: "r-051",
+  id: "r-047",
   name: "Ikotun → Oshodi → Ikorodu",
   transportType: "Danfo",
   fare: 850,
@@ -704,7 +674,7 @@ export const routes: Route[] = [
 
 // Ijegun → Oshodi → Ikorodu
 {
-  id: "r-052",
+  id: "r-048",
   name: "Ijegun → Oshodi → Ikorodu",
   transportType: "Danfo",
   fare: 870,
@@ -718,7 +688,7 @@ export const routes: Route[] = [
 
 // Reverse routes
 {
-  id: "r-053",
+  id: "r-049",
   name: "Ikorodu → Oshodi → Ikotun",
   transportType: "Danfo",
   fare: 850,
@@ -730,7 +700,7 @@ export const routes: Route[] = [
   travelTime: false
 },
 {
-  id: "r-054",
+  id: "r-050",
   name: "Ikorodu → Oshodi → Ijegun",
   transportType: "Danfo",
   fare: 870,
@@ -743,7 +713,7 @@ export const routes: Route[] = [
 },
 // Ikorodu → Oshodi → Ikotun
 {
-  id: "r-055",
+  id: "r-051",
   name: "Ikorodu → Oshodi → Ikotun",
   transportType: "Danfo",
   fare: 850,
@@ -757,7 +727,7 @@ export const routes: Route[] = [
 
 // Ikorodu → Oshodi → Ijegun
 {
-  id: "r-056",
+  id: "r-052",
   name: "Ikorodu → Oshodi → Ijegun",
   transportType: "Danfo",
   fare: 870,
@@ -773,7 +743,7 @@ export const routes: Route[] = [
   // --- Ikorodu Ferry Routes ---
 
 {
-  id: "r-038",
+  id: "r-053",
   name: "Ikorodu → Falomo → CMS",
   transportType: "Ferry",
   fare: 3000,
@@ -795,7 +765,7 @@ export const routes: Route[] = [
 },
 
 {
-  id: "r-039",
+  id: "r-054",
   name: "CMS → Falomo → Ikorodu",
   transportType: "Ferry",
   fare: 3000,
@@ -817,7 +787,7 @@ export const routes: Route[] = [
 },
 
 {
-  id: "r-040",
+  id: "r-055",
   name: "Ikorodu → Five Cowries Terminal (Falomo) → Apapa",
   transportType: "Ferry",
   fare: 3000,
@@ -839,7 +809,7 @@ export const routes: Route[] = [
 },
 
 {
-  id: "r-041",
+  id: "r-056",
   name: "Apapa → Falomo → Ikorodu",
   transportType: "Ferry",
   fare: 3000,
@@ -859,23 +829,6 @@ export const routes: Route[] = [
   ],
   travelTime:false
 },
-
-
- {
-    id: "ferry-ikorodu-apapa",
-    name: "Ikorodu - Apapa - CMS Ferry",
-    transportType: "jetty",
-    fare: 3000,
-    stops: [
-      {id: "ikorodu", name: "Ikorodu Jetty", latitude: 6.605, longitude: 3.509, type: "ferry" },
-      { id: "lekki1", name: "Lekki Phase 1 Jetty", latitude: 6.438, longitude: 3.482,type: "ferry" },
-      {id: "vi", name: "Victoria Island Jetty", latitude: 6.426, longitude: 3.450,type: "ferry" },
-      {   id: "ikoyi", name: "Ikoyi Jetty", latitude: 6.450, longitude: 3.430,type: "ferry" },
-      { id: "apapa", name: "Apapa Jetty", latitude: 6.445, longitude: 3.370,type: "ferry"},
-      { id: "cms", name: "CMS Jetty", latitude: 6.450, longitude: 3.395,type: "ferry"},
-    ],
-    travelTime:false
-  },
 
  
 // Route 1: Somolu → Palmgrove
@@ -1050,6 +1003,78 @@ export const routes: Route[] = [
     { id: "ikorodu", name: "Ikorodu", latitude: 6.6194, longitude: 3.5105, type: "Danfo" },
     { id: "mile12", name: "Mile 12", latitude: 6.6005, longitude: 3.3931, type: "Danfo" },
     { id: "oshodi", name: "Oshodi", latitude: 6.5535, longitude: 3.3430, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+{
+  id: "r-065",
+  name: "Somolu → Yaba",
+  transportType: "Danfo",
+  fare: 300,
+  stops: [
+    { id: "somolu", name: "Somolu", latitude: 6.535, longitude: 3.378, type: "Danfo" },
+    { id: "yaba", name: "Yaba", latitude: 6.509, longitude: 3.378, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+
+{
+  id: "r-066",
+  name: "Yaba → Somolu",
+  transportType: "Danfo",
+  fare: 300,
+  stops: [
+    { id: "yaba", name: "Yaba", latitude: 6.509, longitude: 3.378, type: "Danfo" },
+    { id: "somolu", name: "Somolu", latitude: 6.535, longitude: 3.378, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+
+{
+  id: "r-067",
+  name: "CMS → Yaba",
+  transportType: "Danfo",
+  fare: 500,
+  stops: [
+    { id: "cms", name: "CMS", latitude: 6.454, longitude: 3.395, type: "Danfo" },
+    { id: "yaba", name: "Yaba", latitude: 6.509, longitude: 3.378, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+{
+  id: "r-068",
+  name: "Yaba → CMS",
+  transportType: "Danfo",
+  fare: 500,
+  stops: [
+    { id: "yaba", name: "Yaba", latitude: 6.509, longitude: 3.378, type: "Danfo" },
+    { id: "cms", name: "CMS", latitude: 6.454, longitude: 3.395, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+{
+  id: "r-069",
+  name: "Ajah → Lekki → VI → CMS",
+  transportType: "Danfo",
+  fare: 1000,
+  stops: [
+    { id: "ajah", name: "Ajah", latitude: 6.466, longitude: 3.603, type: "Danfo" },
+    { id: "lekki_phase1", name: "Lekki Phase 1", latitude: 6.442, longitude: 3.474, type: "Danfo" },
+    { id: "victoria_island", name: "Victoria Island", latitude: 6.428, longitude: 3.421, type: "Danfo" },
+    { id: "cms", name: "CMS", latitude: 6.454, longitude: 3.394, type: "Danfo" },
+  ],
+  travelTime: false,
+},
+{
+  id: "r-070",
+  name: "CMS → VI → Lekki → Ajah",
+  transportType: "Danfo",
+  fare: 800,
+  stops: [
+    { id: "cms", name: "CMS", latitude: 6.454, longitude: 3.394, type: "Danfo" },
+    { id: "victoria_island", name: "Victoria Island", latitude: 6.428, longitude: 3.421, type: "Danfo" },
+    { id: "lekki_phase1", name: "Lekki Phase 1", latitude: 6.442, longitude: 3.474, type: "Danfo" },
+    { id: "ajah", name: "Ajah", latitude: 6.466, longitude: 3.603, type: "Danfo" },
   ],
   travelTime: false,
 },
